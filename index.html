@@ -339,7 +339,7 @@ h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.08;letter-spacin
 .cta p{color:var(--cream-dim);margin-top:20px;font-size:1.12rem}
 .cta-actions{display:flex;flex-wrap:wrap;gap:16px;justify-content:center;margin-top:38px}
 .cta .price-note{margin-top:26px;font-size:.9rem;color:var(--cream-dim)}
-.cta .big-phone{margin-top:20px;font-family:var(--serif);font-weight:600;font-size:clamp(1.5rem,3vw,2rem);color:var(--gold-bright);display:inline-flex;align-items:center;gap:12px}
+.cta .big-phone{margin-top:20px;font-family:var(--serif);font-weight:600;font-size:clamp(1.05rem,2.6vw,1.7rem);color:var(--gold-bright);display:inline-flex;align-items:center;gap:12px;word-break:break-all;text-align:left}
 .cta .big-phone svg{width:28px;height:28px}
 
 /* ---------- FOOTER ---------- */
@@ -440,7 +440,7 @@ h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.08;letter-spacin
       <a href="#kontakt">Kontakt</a>
     </nav>
     <div class="nav-cta">
-      <a class="btn btn-ghost" href="tel:+4915739472522">Anrufen</a>
+      <a class="btn btn-ghost em-mail" href="#kontakt">E-Mail</a>
       <a class="btn btn-gold" href="#kontakt">Jetzt anfragen</a>
       <button class="burger" id="burger" aria-label="Menü öffnen">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
@@ -465,9 +465,9 @@ h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.08;letter-spacin
         <a class="btn btn-gold" href="#kontakt">Kostenlose Anfrage
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
-        <a class="phone-pill" href="tel:+4915739472522">
-          <span class="ico"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7A2 2 0 0 1 22 16.9Z" stroke="var(--gold-bright)"/></svg></span>
-          <span>Preise individuell auf Anfrage<br><b>+49 1573 9472522</b></span>
+        <a class="phone-pill em-mail" href="#kontakt">
+          <span class="ico"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="var(--gold-bright)" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+          <span>Preise individuell auf Anfrage<br><b class="em-text">per E-Mail</b></span>
         </a>
       </div>
       <div class="trust">
@@ -693,15 +693,14 @@ h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.08;letter-spacin
       <h2>Lass deine Abläufe endlich <span class="gold">für dich arbeiten</span></h2>
       <p>Mehr Zeit für deine Kunden, mehr Fokus auf das Wesentliche. Erzähl mir kurz, was dich täglich bremst, und ich zeige dir, was sich automatisieren lässt. Preise und Abomodelle vereinbaren wir individuell.</p>
       <div class="cta-actions">
-        <a class="btn btn-gold" href="https://wa.me/4915739472522?text=Hallo%20Sebastian,%20ich%20interessiere%20mich%20f%C3%BCr%20KI-Automation%20f%C3%BCr%20meinen%20Betrieb." target="_blank" rel="noopener">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.3A10 10 0 1 0 12 2Z"/></svg>
-          Anfrage per WhatsApp
+        <a class="btn btn-gold em-mail" href="#kontakt">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          Anfrage per E-Mail
         </a>
-        <a class="btn btn-ghost" href="tel:+4915739472522">Direkt anrufen</a>
       </div>
-      <a class="big-phone" href="tel:+4915739472522">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7A2 2 0 0 1 22 16.9Z"/></svg>
-        +49 1573 9472522
+      <a class="big-phone em-mail" href="#kontakt">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        <span class="em-text">E-Mail wird geladen …</span>
       </a>
       <div class="price-note">Individuelle Lösungen · Festpreise oder Abomodell · DSGVO-konform &amp; lokal</div>
     </div>
@@ -736,8 +735,7 @@ h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.08;letter-spacin
       <div>
         <h4>Kontakt</h4>
         <ul>
-          <li><a href="tel:+4915739472522"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7A2 2 0 0 1 22 16.9Z"/></svg>+49 1573 9472522</a></li>
-          <li><a href="https://wa.me/4915739472522" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.3A10 10 0 1 0 12 2Z"/></svg>Anfrage per WhatsApp</a></li>
+          <li><a href="#kontakt" class="em-mail"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span class="em-text">E-Mail schreiben</span></a></li>
           <li><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Deutschland · lokal &amp; DSGVO-konform</span></li>
         </ul>
       </div>
@@ -948,11 +946,10 @@ h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.08;letter-spacin
     <h2 id="imp-t">Impressum</h2>
     <p class="l-cap">Angaben gemäß § 5 DDG</p>
     <h3>Verantwortlich für diese Website</h3>
-    <p>Sebastian Horst<br>Akazienweg 16<br>73571 Göggingen<br>Deutschland</p>
+    <p>Sebastian Horst<br>Deutschland</p>
     <h3>Kontakt</h3>
-    <p>Telefon: <a href="tel:+4915739472522">+49 1573 9472522</a><br>
-    E-Mail: <a href="mailto:finanzkanzleihorst@gmail.com">finanzkanzleihorst@gmail.com</a></p>
-    <div class="l-note"><b>Hinweis zum Status dieser Website:</b> Diese Website dient derzeit ausschließlich der Vorstellung eines geplanten Angebots im Bereich Digitalisierung und Prozessautomation. Es werden aktuell noch keine Dienstleistungen angeboten und keine Verträge geschlossen. Die Gewerbeanmeldung befindet sich im laufenden Verfahren. Verbindliche Angebote, Preise und Vertragsbedingungen folgen erst nach Abschluss der Gründung.</div>
+    <p>E-Mail: <a href="#kontakt" class="em-mail"><span class="em-text">wird im Browser angezeigt</span></a></p>
+    <div class="l-note"><b>Hinweis zum Status dieser Website:</b> Diese Website dient derzeit ausschließlich der Vorstellung eines geplanten Angebots im Bereich Digitalisierung und Prozessautomation. Es werden aktuell noch keine Dienstleistungen angeboten und keine Verträge geschlossen. Die Gewerbeanmeldung befindet sich im laufenden Verfahren. Verbindliche Angebote, Preise und Vertragsbedingungen folgen erst nach Abschluss der Gründung. Die vollständige Anbieterkennzeichnung mit ladungsfähiger Anschrift wird mit der Gewerbeanmeldung ergänzt und bis dahin berechtigten Interessenten auf Anfrage per E-Mail mitgeteilt.</div>
     <p>Verantwortlich für den Inhalt: Sebastian Horst, Anschrift wie oben.</p>
   </div>
 </div>
@@ -963,8 +960,7 @@ h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.08;letter-spacin
     <h2 id="ds-t">Datenschutzerklärung</h2>
     <p class="l-cap">Stand: Juli 2026</p>
     <h3>1. Verantwortlicher</h3>
-    <p>Sebastian Horst, Akazienweg 16, 73571 Göggingen<br>
-    E-Mail: <a href="mailto:finanzkanzleihorst@gmail.com">finanzkanzleihorst@gmail.com</a></p>
+    <p>Sebastian Horst<br>E-Mail: <a href="#kontakt" class="em-mail"><span class="em-text">wird im Browser angezeigt</span></a></p>
     <h3>2. Grundsatz</h3>
     <p>Diese Website ist eine rein informative Seite. Es gibt kein Kontaktformular, keinen Newsletter, keine Cookies, kein Tracking und keine Analysetools. Ich selbst erhebe und speichere keine personenbezogenen Daten von Besuchern.</p>
     <h3>3. Hosting</h3>
@@ -1001,6 +997,12 @@ h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.08;letter-spacin
   });
   document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeAll(); });
   if(location.hash==='#impressum'||location.hash==='#datenschutz') openLegal(location.hash.slice(1));
+  var _p='tsrohielznakznanif'.split('').reverse().join('');
+  var _m=_p+String.fromCharCode(64)+['gmail','com'].join(String.fromCharCode(46));
+  document.querySelectorAll('.em-mail').forEach(function(a){
+    a.setAttribute('href','mailto:'+_m+'?subject='+encodeURIComponent('Anfrage KI-Automation'));
+  });
+  document.querySelectorAll('.em-text').forEach(function(t){ t.textContent=_m; });
 })();
 </script>
 </body>
